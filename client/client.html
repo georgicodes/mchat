@@ -7,8 +7,14 @@
 <div class="container">
   {{loginButtons align="right"}}<br>
   {{> welcome }}
+  <div class="row">
+  <div class="one third">{{>users}}</div>
+  <div class="two thirds">  {{> messages }}
+</div>
+</div>
+  <div class="row">
   {{> input }}
-  {{> messages }}
+  </div>
   </div>
 </body>
 
@@ -18,11 +24,20 @@
     </div>
 </template>
 
+<template name="users">
+  {{#each users}}
+  <p>
+    <strong>{{profile.name}}
+    </strong>
+    </p>
+  {{/each}}
+</template>
+
 <template name="messages">
   {{#each messages}}
   <p class="purple box">
-    <strong>{{name}}:
-  </strong></p> {{message}}<br>
+    <strong>{{name}}<br>
+  </strong> {{message}}</p>
   {{/each}}
 </template>
 
