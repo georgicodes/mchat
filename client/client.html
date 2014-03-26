@@ -1,24 +1,28 @@
 <head>
-  <title>Chat app</title>
+  <title>Women Who Code & Chat</title>
+  <link type="text/css" rel="stylesheet" href="groundwork.css">
 </head>
 
 <body>
+<div class="container">
   {{loginButtons align="right"}}<br>
-  <h1>Chatapp</h1>
   {{> welcome }}
   {{> input }}
   {{> messages }}
+  </div>
 </body>
 
 <template name="welcome">
-  <p>
-    Welcome to the example chat app!
-  </p>
+<div class="row">
+    <h1>Women Who Code Chat</h1>
+    </div>
 </template>
 
 <template name="messages">
   {{#each messages}}
-    <strong>{{name}}:</strong> {{message}}<br>
+  <p class="purple box">
+    <strong>{{name}}:
+  </strong></p> {{message}}<br>
   {{/each}}
 </template>
 
