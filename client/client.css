@@ -7,3 +7,32 @@ html {
     float: right;
 }
 
+#chatWindow {
+    /*overflow: auto; */
+  overflow-y: scroll;
+  height: 300px;
+  border: 1px solid #9b59b6;
+}
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+  /*background: rgba();*/
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    background: rgba(95,174,227,0.8); 
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); */
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(95,174,227,0.8); 
+}

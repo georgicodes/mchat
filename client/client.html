@@ -9,12 +9,14 @@
   {{> welcome }}
   <div class="row">
   <div class="one third">{{>users}}</div>
-  <div class="two thirds">  {{> messages }}
-</div>
-</div>
-  <div class="row">
-  {{> input }}
+  <div class="two thirds">
+  <div id="chatWindow">
+    {{> messages }}
+    </div>
+    {{> input }}
   </div>
+</div>
+
   </div>
 </body>
 
